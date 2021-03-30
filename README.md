@@ -1,9 +1,60 @@
+
+* [免杀技术大杂烩\-\-\-乱拳也打不死老师傅](#免杀技术大杂烩---乱拳也打不死老师傅)
+  * [Loader tech](#loader-tech)
+    * [CreateThread](#createthread)
+    * [ThreadHijacking](#threadhijacking)
+    * [VirtualProtect](#virtualprotect)
+    * [sRDI](#srdi)
+    * [系统直接调用](#系统直接调用)
+      * [system\.asm](#systemasm)
+      * [xx\.h](#xxh)
+      * [xx\.c](#xxc)
+    * [Unhook EDR](#unhook-edr)
+    * [动态调用 API 函数](#动态调用-api-函数)
+    * [垃圾混淆代码\-\-\-nop nop空指令雪橇](#垃圾混淆代码---nop-nop空指令雪橇)
+    * [父进程欺骗](#父进程欺骗)
+    * [Windows 10进程镂空技术](#windows-10进程镂空技术)
+    * [Process Doppelgänging](#process-doppelgänging)
+  * [Encrypt](#encrypt)
+    * [AES](#aes)
+    * [shellcode 字节替换](#shellcode-字节替换)
+      * [xor](#xor)
+      * [crypt1337](#crypt1337)
+      * [字节替换](#字节替换)
+  * [Dll hijacking](#dll-hijacking)
+    * [通用Dll劫持技术\-\-\-SuperHijacking](#通用dll劫持技术---superhijacking)
+  * [Dll injection](#dll-injection)
+    * [摘要](#摘要)
+    * [CreateRemoteThread(NewProcess)](#createremotethreadnewprocess)
+    * [异步过程调用(APC)注入](#异步过程调用apc注入)
+    * [Block DLL(Create New Process)](#block-dllcreate-new-process)
+    * [ACG(Arbitrary Code Guard)](#acgarbitrary-code-guard)
+    * [内存动态加载DLL](#内存动态加载dll)
+  * [虚拟机反调试](#虚拟机反调试)
+  * [UAC](#uac)
+    * [visual Studio下设置UAC需求](#visual-studio下设置uac需求)
+    * [CompyterDefaults\.exe](#compyterdefaultsexe)
+  * [Other](#other)
+    * [C\# 函数变换](#c-函数变换)
+    * [go 内联免杀](#go-内联免杀)
+    * [AVIator](#aviator)
+    * [cs \+ veil](#cs--veil)
+    * [Simple\-Loader 免杀Defender](#simple-loader-免杀defender)
+    * [反弹socket \-\-\- NativePayload\_ReverseShell](#反弹socket-----nativepayload_reverseshell)
+    * [bypassAMSI](#bypassamsi)
+    * [API替换](#api替换)
+    * [Spoofing CommandLine Argument](#spoofing-commandline-argument)
+    * [签名伪造](#签名伪造)
+    * [修改资源文件](#修改资源文件)
+    * [MSF](#msf)
+    * [pubprn\.vbs\*](#pubprnvbs)
+    * [隐藏窗口](#隐藏窗口)
+  * [参考资料](#参考资料)
+
+
+
 # 免杀技术大杂烩---乱拳也打不死老师傅
 Author: Boi@Linton Lab 360
-
-[TOC]
-
-左上角按钮可以看目录树
 
 ---
 
